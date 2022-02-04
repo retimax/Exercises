@@ -47,6 +47,44 @@
       }
 
       exercise4("hola",3)
+      // Programa una función que invierta las palabras de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá "odnuM aloH"
+      
+      const exercise5 = (stringToReverse) => {
+        if (typeof(stringToReverse) !== "string") {
+            console.warn(error)
+        } else {
+        // Coverting every character from the string to an array
+        let stringSplit = stringToReverse.split("")
+        // Reverting the characters 
+        let revertString = stringSplit.reverse()
+        // Joining the array whithout the ""
+        let joinedArray = revertString.join("")
+        // Returning the result 
+        console.log(joinedArray)
+        }
+      }
+      exercise5("putos")
+      // Programa una función para contar el número de veces que se repite una palabra en un texto largo, pe. miFuncion("hola mundo adios mundo", "mundo") devolverá 2
+      const exercise6 = (string1,charactersToFind) => {
+          if (typeof(string1) !== "string") {
+              console.warn(error)
+          } else {
+              console.log(string1.split(charactersToFind).length -1)
+          }
+      }
+      exercise6("hola hola hola","hola")
+      // Programa una función que valide si una palabra o frase dada, es un palíndromo (que se lee igual en un sentido que en otro), pe. mifuncion("Salas") devolverá true
+      const exercise7 = (palindromo) => {
+          if(typeof(palindromo) !== "string") {
+              console.warn(error)
+          } else {
+              let palindromoSplit = palindromo.split("")
+              let palindromoReverse = palindromoSplit.reverse()
+              let palindromoJoin = palindromoReverse.join("");
+              (palindromo === palindromoJoin)? console.log(true) : console.log(false)
+            }
+      }
+      exercise7("salas")
     </script>
   </body>
 </html>
