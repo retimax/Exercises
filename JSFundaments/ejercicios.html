@@ -8,7 +8,7 @@
   </head>
   <body>
     <script>
-      let error = "The characters are invalid"
+      let error = "The characters are invalid";
 
       // Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá 10
       const exercise1 = (str) => {
@@ -93,16 +93,15 @@
       // Programa una función que elimine cierto patrón de caracteres de un texto dado, pe. miFuncion("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz") devolverá  "1, 2, 3, 4 y 5
 
       const exercise8 = (text, delString) => {
-        if (typeof(text) !== "string") {
-          console.warn(error)
+        if (typeof text !== "string") {
+          console.warn(error);
         } else {
-          textReplace = text.replaceAll(delString, "")
-          console.log(textReplace)
+          textReplace = text.replaceAll(delString, "");
+          console.log(textReplace);
         }
-      }
+      };
 
-      exercise8("xy1, xy2, xy3, xy4", "xy")
+      exercise8("xy1, xy2, xy3, xy4", "xy");
     </script>
   </body>
 </html>
-
